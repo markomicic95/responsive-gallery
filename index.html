@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .container {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+
+        .column {
+            flex-basis: 16%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px rgb(184 169 169);
+            text-align: center;
+            margin: 15px;
+        }
+
+        .box {
+            height: 144px;
+            background-color: #2495ff;
+            background-image: url(placeholder-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        @media screen and (max-width: 1024px) {
+            .column {
+            flex-basis: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .column {
+            flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .column {
+            flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Gallery Heading</h1>
+        <div class="row">
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+            <div class="column">
+                <div class="box"></div>
+                Image TItle
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Praesent mi magna, rhoncus id volutpat ac, hendrerit ut tortor. Maecenas sit amet felis tortor. Duis at viverra metus, quis feugiat eros. 
+            Aenean nec maximus ligula, ac interdum nibh. Nullam varius vel libero ac suscipit. 
+            Praesent ac sollicitudin lorem. Sed interdum, tellus sed fringilla tincidunt, ante lectus efficitur leo, nec interdum sapien arcu et elit.
+            Suspendisse in ante at ipsum pretium aliquam ut sit amet felis. Mauris luctus laoreet magna. Phasellus vel varius eros. Mauris et velit augue.
+            Curabitur urna velit, volutpat vel consectetur eu, mollis nec enim. Donec malesuada sit amet nisi ac hendrerit.</p>
+    </div>
+</body>
+</html>
